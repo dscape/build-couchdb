@@ -10,7 +10,7 @@ RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt
 
 RUN apt-get update
 RUN apt-get upgrade
-RUN apt-get -y install help2man make gcc zlib1g-dev libssl-dev rake
+RUN apt-get -y install help2man make gcc zlib1g-dev libssl-dev rake git-core
 
 RUN cd ~/
 RUN git clone git://github.com/iriscouch/build-couchdb
